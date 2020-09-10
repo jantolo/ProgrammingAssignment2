@@ -2,6 +2,7 @@
 ## more efficiently
 
 ## function makeCacheMatrix creates a vector with a list of functions
+## to set and get the values of the matrix and its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
      h <- NULL
@@ -16,7 +17,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## function calculates the inverse of a matrix
+## function calculates the inverse of a matrix. It checks if the new matrix
+## already exists to use that previous computation.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
